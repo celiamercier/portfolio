@@ -1,5 +1,5 @@
 <template>
-  <b-img-lazy thumbnail fluid :src="img.src"/>
+  <b-img-lazy v-b-modal.pictureModal thumbnail fluid :src="img.src"/>
 </template>
 
 <script>
