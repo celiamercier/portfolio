@@ -1,22 +1,35 @@
 <template>
-  <b-container fluid id="header">
+  <b-container id="header">
     <h1>Yvanya</h1>
+    <menu-component id="navigation"></menu-component>
   </b-container>
 </template>
 
 <script>
+  import MenuComponent from "./menu/Menu.vue";
+
   export default {
-    name: 'header-component'
+    name: 'header-component',
+    components: { MenuComponent }
   }
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
   #header {
-    background-color: #353535;
-    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
 
   #header h1 {
-    color: white;
+    color: #C1B4A7;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    font-size: 400%;
+  }
+
+  #navigation {
+    margin-top: 60px;
   }
 </style>
